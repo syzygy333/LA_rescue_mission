@@ -7,9 +7,9 @@ feature 'user signs in', %Q{
 } do
 
   before :each do
-    Question.create(title: "Some question", description: "The first question", user_id: 1)
+    Question.create(title: "Some questionSome questionSome questionThe first question", description: "The first questionThe first questionThe first questionThe first questionThe first questionThe first questionThe first questionThe first questionThe first question", user_id: 1)
 
-    Question.create(title: "Another question", description: "The second question", user_id: 1)
+    Question.create(title: "Another questionAnother questionAnother question", description: "The second questionThe second questionThe second questionThe second questionThe second questionThe second questionThe second questionThe second questionThe second question", user_id: 1)
   end
 
   scenario 'user views question index' do

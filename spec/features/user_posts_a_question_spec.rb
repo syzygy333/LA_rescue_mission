@@ -15,9 +15,7 @@ feature 'user posts a question', %Q{
 } do
 
   scenario 'user posts a question' do
-    visit '/questions/new'
+    # visit '/questions/new'
 
-    expect(page).to have_content("Some question")
-    expect(page).to have_selector("li:last-child", :text => "Some question")
   end
 end

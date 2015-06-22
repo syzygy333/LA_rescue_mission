@@ -15,7 +15,7 @@ feature 'user signs in', %Q{
 
 
   scenario 'user visits question show page and sees questions details' do
-    question = Question.create(title: "Some question", description: "The first question", user_id: 1)
+    question = Question.create(title: "Some questionSome questionSome questionThe first question", description: "The first questionThe first questionThe first questionThe first questionThe first questionThe first questionThe first questionThe first questionThe first question", user_id: 1)
 
     visit '/questions'
 
