@@ -1,6 +1,12 @@
 <h1><%= @question.title %></h1>
 <p><%= @question.description %></p>
 
+<form action="/questions/<%= @question.id %>/edit" method="get">
+  <input type="submit" name="edit" value="Edit" />
+</form>
+
+<!-- <a href="/questions/<%= @question.id %>/edit">Edit</a> -->
+
 <% if @answers %>
 <ul>
   <% @answers.each do |answer| %>

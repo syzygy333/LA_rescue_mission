@@ -12,9 +12,6 @@ feature 'user views all the answers to a question', %Q{
   [X] I must see all answers listed in order, most recent last
 } do
 
-  before :each do
-  end
-
   scenario 'user views question show page and sees all answers' do
     question1 = Question.create(title: "The best question ever to be asked in the history of the universe", description: "How much wood would a woodchuck chuck if a woodchuck could chuck wood? Please tell me...I have a serious woodchuck-chucking-wood at me problem. dhofdshjlfhvldfbjgdofgjodfgjdfljvldfvjo.", user_id: 1)
 

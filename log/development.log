@@ -2904,3 +2904,765 @@ Started GET "/assets/foundation.self-abe4ee7a105042f73b12b1f1a28788522d2f253445a
 
 
 Started GET "/assets/application.self-1509cb3433bf7f60a75710bd4d8561d25423676b3c4d4a21914940bf07b8869a.js?body=1" for ::1 at 2015-06-23 15:56:35 -0400
+
+
+Started GET "/questions/1/edit" for ::1 at 2015-06-23 16:09:48 -0400
+
+AbstractController::ActionNotFound (The action 'edit' could not be found for QuestionsController):
+  actionpack (4.2.2) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.2) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.2) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.2) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.2) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.2) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.2) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.2) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.3) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Brian/.rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/Brian/.rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/Brian/.rubies/ruby-2.0.0-p576/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Brian/.gem/ruby/2.0.0/gems/actionpack-4.2.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.7ms)
+  Rendered /Users/Brian/.gem/ruby/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_markup.html.erb (2.0ms)
+  Rendered /Users/Brian/.gem/ruby/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/Brian/.gem/ruby/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/Brian/.gem/ruby/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.2ms)
+  Rendered /Users/Brian/.gem/ruby/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/console.js.erb within layouts/javascript (114.9ms)
+  Rendered /Users/Brian/.gem/ruby/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/main.js.erb within layouts/javascript (1.8ms)
+  Rendered /Users/Brian/.gem/ruby/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.6ms)
+  Rendered /Users/Brian/.gem/ruby/2.0.0/gems/web-console-2.1.3/lib/web_console/templates/index.html.erb (168.9ms)
+
+
+Started GET "/questions/1" for ::1 at 2015-06-23 16:10:33 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mQuestion Load (1.0ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAnswer Load (0.8ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+  Rendered questions/show.html.erb within layouts/application (108.9ms)
+Completed 200 OK in 1846ms (Views: 1630.8ms | ActiveRecord: 105.0ms)
+
+
+Started GET "/assets/foundation/foundation.self-830ea1c8c77bc6df1ef936612b213ec314ab3f2c08b2fca37d12f27123599dcd.js?body=1" for ::1 at 2015-06-23 16:10:35 -0400
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for ::1 at 2015-06-23 16:10:35 -0400
+
+
+Started GET "/assets/foundation_and_overrides.self-abc4def05cdfd072a864560f7d30abb82168baf19224baeb8e17ecec829be2d8.css?body=1" for ::1 at 2015-06-23 16:10:35 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-23 16:10:36 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.self-8e38bef2cbea3ec43e8de086ad0f73079662c3330d3eec2ace9029a5b8f6f4c2.js?body=1" for ::1 at 2015-06-23 16:10:36 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.self-791df0f92b5f9733058e009aa29c58c3c88465c52b98ad3c2912dd27dc4b9572.js?body=1" for ::1 at 2015-06-23 16:10:36 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.self-14d1119886db0d260f10114ae33f33ec1e76f09abb5eac77c7d392ca1ce27aaf.js?body=1" for ::1 at 2015-06-23 16:10:36 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-23 16:10:36 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.self-e68714c816093dc6b9e24ac9545c9795b610d6c8fe1613656e1fd57b577c4901.js?body=1" for ::1 at 2015-06-23 16:10:36 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.self-dab213f1ddc805a7461a1768832f6399699dd2c87130b4cda9d49dbf67749e3f.js?body=1" for ::1 at 2015-06-23 16:10:37 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.self-ef61c6af9edf0954e9db13d91fedb47fe753c9fa7dffc9fb53db6685d11bbc94.js?body=1" for ::1 at 2015-06-23 16:10:37 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.self-be288b3f53d49bcb5d62da877f5cacda819e6563dad2756aa05fd457b4d679b1.js?body=1" for ::1 at 2015-06-23 16:10:37 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.self-8b41cd13a988c713cda9ac7209ce925705c76377afbe9be10942a17afc9613fb.js?body=1" for ::1 at 2015-06-23 16:10:37 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.self-f7b8844a82cd487d6dbcdf779eb58aad572e22aa24aab881172c6a5cc5fde916.js?body=1" for ::1 at 2015-06-23 16:10:37 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.self-7111fa263c9b4d5e78bc6674d715d2e1432e01bf88b7d04ce601dfe11caf2308.js?body=1" for ::1 at 2015-06-23 16:10:37 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.self-5a0a77db519d1fd14aa53891c24b56f20ec106891cd5852abe73251119a1bdf8.js?body=1" for ::1 at 2015-06-23 16:10:37 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.self-1de146a9316c7f1e124cecf68084b34bcc515c6284cb6e122fdc4e90b7fd3634.js?body=1" for ::1 at 2015-06-23 16:10:38 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.self-ea1eb259c6a68133bef9b2e28e90d256da98b298db0543e6be48a05d1becb159.js?body=1" for ::1 at 2015-06-23 16:10:38 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.self-99d1695338bf0f77c8bca710a4e23f6227be30085956df2e44507d86f67bd706.js?body=1" for ::1 at 2015-06-23 16:10:38 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.self-e9a45f7e9af1ed08e3e7ffb28f658dbda56fad542a974a5eceb1787d65f4c60f.js?body=1" for ::1 at 2015-06-23 16:10:38 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.self-be715cb5824056a2e4295cdbffa2f902202ada977c9c5e62c967d4eafab345e7.js?body=1" for ::1 at 2015-06-23 16:10:38 -0400
+
+
+Started GET "/assets/foundation.self-abe4ee7a105042f73b12b1f1a28788522d2f253445a475a94ab4d6e1f7b0ec52.js?body=1" for ::1 at 2015-06-23 16:10:38 -0400
+
+
+Started GET "/assets/application.self-1509cb3433bf7f60a75710bd4d8561d25423676b3c4d4a21914940bf07b8869a.js?body=1" for ::1 at 2015-06-23 16:10:39 -0400
+  [1m[36m (5059.4ms)[0m  [1mDROP DATABASE IF EXISTS "rescue-mission_development"[0m
+PG::ObjectInUse: ERROR:  database "rescue-mission_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+: DROP DATABASE IF EXISTS "rescue-mission_development"
+  [1m[35m (128.3ms)[0m  DROP DATABASE IF EXISTS "rescue-mission_test"
+  [1m[36m (0.6ms)[0m  [1mCREATE DATABASE "rescue-mission_development" ENCODING = 'unicode'[0m
+PG::DuplicateDatabase: ERROR:  database "rescue-mission_development" already exists
+: CREATE DATABASE "rescue-mission_development" ENCODING = 'unicode'
+  [1m[35m (455.9ms)[0m  CREATE DATABASE "rescue-mission_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (16.2ms)[0m  DROP TABLE "answers" CASCADE
+  [1m[36m (26.7ms)[0m  [1mCREATE TABLE "answers" ("id" serial primary key, "answer" text NOT NULL, "question_id" integer NOT NULL, "created_at" timestamp, "updated_at" timestamp, "user_id" integer NOT NULL) [0m
+  [1m[35m (6.8ms)[0m  DROP TABLE "questions" CASCADE
+  [1m[36m (8.4ms)[0m  [1mCREATE TABLE "questions" ("id" serial primary key, "title" character varying NOT NULL, "description" text NOT NULL, "user_id" integer NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (5.1ms)[0m  DROP TABLE "users" CASCADE
+  [1m[36m (8.9ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (2.1ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")
+  [1m[36m (2.3ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users" USING btree ("reset_password_token")[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (12.4ms)[0m  CREATE TABLE "answers" ("id" serial primary key, "answer" text NOT NULL, "question_id" integer NOT NULL, "created_at" timestamp, "updated_at" timestamp, "user_id" integer NOT NULL) 
+  [1m[36m (7.5ms)[0m  [1mCREATE TABLE "questions" ("id" serial primary key, "title" character varying NOT NULL, "description" text NOT NULL, "user_id" integer NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (6.7ms)[0m  CREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (2.1ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users" USING btree ("reset_password_token")
+  [1m[36m (2.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.9ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150623174446')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150622164911')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150622165213')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150623173551')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150623173800')
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "questions" ("title", "description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The best question ever to be asked in the history of the universe"], ["description", "How much wood would a woodchuck chuck if a woodchuck could chuck wood? Please tell me...I have a serious woodchuck-chucking-wood at me problem. dhofdshjlfhvldfbjgdofgjodfgjdfljvldfvjo."], ["user_id", 1], ["created_at", "2015-06-23 20:12:03.806145"], ["updated_at", "2015-06-23 20:12:03.806145"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "answers" ("answer", "question_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["answer", "I have an answer for you, but before I tell you, let me tell you all the ways in which you are a terrible human being."], ["question_id", 1], ["user_id", 88], ["created_at", "2015-06-23 20:12:03.881137"], ["updated_at", "2015-06-23 20:12:03.881137"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "answers" ("answer", "question_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["answer", "Don't listen to that other guy. You're not a terrible human being. It's just a terrible terrible question and you should not be allowed to ask any more questions. Ever."], ["question_id", 1], ["user_id", 89], ["created_at", "2015-06-23 20:12:03.885552"], ["updated_at", "2015-06-23 20:12:03.885552"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+
+
+Started GET "/questions/1" for ::1 at 2015-06-23 16:16:48 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mQuestion Load (1.7ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAnswer Load (4.6ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+  Rendered questions/show.html.erb within layouts/application (116.9ms)
+Completed 200 OK in 1608ms (Views: 1384.1ms | ActiveRecord: 19.7ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-23 16:16:51 -0400
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for ::1 at 2015-06-23 16:16:51 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-23 16:16:52 -0400
+
+
+Started GET "/assets/foundation/foundation.self-830ea1c8c77bc6df1ef936612b213ec314ab3f2c08b2fca37d12f27123599dcd.js?body=1" for ::1 at 2015-06-23 16:16:52 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.self-14d1119886db0d260f10114ae33f33ec1e76f09abb5eac77c7d392ca1ce27aaf.js?body=1" for ::1 at 2015-06-23 16:16:52 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.self-791df0f92b5f9733058e009aa29c58c3c88465c52b98ad3c2912dd27dc4b9572.js?body=1" for ::1 at 2015-06-23 16:16:52 -0400
+
+
+Started GET "/assets/foundation_and_overrides.self-abc4def05cdfd072a864560f7d30abb82168baf19224baeb8e17ecec829be2d8.css?body=1" for ::1 at 2015-06-23 16:16:52 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.self-8e38bef2cbea3ec43e8de086ad0f73079662c3330d3eec2ace9029a5b8f6f4c2.js?body=1" for ::1 at 2015-06-23 16:16:52 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.self-dab213f1ddc805a7461a1768832f6399699dd2c87130b4cda9d49dbf67749e3f.js?body=1" for ::1 at 2015-06-23 16:16:52 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.self-ef61c6af9edf0954e9db13d91fedb47fe753c9fa7dffc9fb53db6685d11bbc94.js?body=1" for ::1 at 2015-06-23 16:16:53 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.self-f7b8844a82cd487d6dbcdf779eb58aad572e22aa24aab881172c6a5cc5fde916.js?body=1" for ::1 at 2015-06-23 16:16:53 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.self-e68714c816093dc6b9e24ac9545c9795b610d6c8fe1613656e1fd57b577c4901.js?body=1" for ::1 at 2015-06-23 16:16:53 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.self-be288b3f53d49bcb5d62da877f5cacda819e6563dad2756aa05fd457b4d679b1.js?body=1" for ::1 at 2015-06-23 16:16:53 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.self-8b41cd13a988c713cda9ac7209ce925705c76377afbe9be10942a17afc9613fb.js?body=1" for ::1 at 2015-06-23 16:16:53 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.self-7111fa263c9b4d5e78bc6674d715d2e1432e01bf88b7d04ce601dfe11caf2308.js?body=1" for ::1 at 2015-06-23 16:16:53 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.self-5a0a77db519d1fd14aa53891c24b56f20ec106891cd5852abe73251119a1bdf8.js?body=1" for ::1 at 2015-06-23 16:16:53 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.self-99d1695338bf0f77c8bca710a4e23f6227be30085956df2e44507d86f67bd706.js?body=1" for ::1 at 2015-06-23 16:16:53 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.self-ea1eb259c6a68133bef9b2e28e90d256da98b298db0543e6be48a05d1becb159.js?body=1" for ::1 at 2015-06-23 16:16:54 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.self-e9a45f7e9af1ed08e3e7ffb28f658dbda56fad542a974a5eceb1787d65f4c60f.js?body=1" for ::1 at 2015-06-23 16:16:54 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.self-1de146a9316c7f1e124cecf68084b34bcc515c6284cb6e122fdc4e90b7fd3634.js?body=1" for ::1 at 2015-06-23 16:16:54 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.self-be715cb5824056a2e4295cdbffa2f902202ada977c9c5e62c967d4eafab345e7.js?body=1" for ::1 at 2015-06-23 16:16:54 -0400
+
+
+Started GET "/assets/application.self-1509cb3433bf7f60a75710bd4d8561d25423676b3c4d4a21914940bf07b8869a.js?body=1" for ::1 at 2015-06-23 16:16:54 -0400
+
+
+Started GET "/assets/foundation.self-abe4ee7a105042f73b12b1f1a28788522d2f253445a475a94ab4d6e1f7b0ec52.js?body=1" for ::1 at 2015-06-23 16:16:54 -0400
+
+
+Started GET "/questions/1" for ::1 at 2015-06-23 16:20:45 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mQuestion Load (3.4ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAnswer Load (0.6ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+  Rendered questions/show.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 1648ms (Views: 1456.5ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/assets/foundation_and_overrides.self-abc4def05cdfd072a864560f7d30abb82168baf19224baeb8e17ecec829be2d8.css?body=1" for ::1 at 2015-06-23 16:20:48 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-23 16:20:49 -0400
+
+
+Started GET "/assets/foundation/foundation.self-830ea1c8c77bc6df1ef936612b213ec314ab3f2c08b2fca37d12f27123599dcd.js?body=1" for ::1 at 2015-06-23 16:20:49 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.self-14d1119886db0d260f10114ae33f33ec1e76f09abb5eac77c7d392ca1ce27aaf.js?body=1" for ::1 at 2015-06-23 16:20:49 -0400
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for ::1 at 2015-06-23 16:20:49 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-23 16:20:49 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.self-791df0f92b5f9733058e009aa29c58c3c88465c52b98ad3c2912dd27dc4b9572.js?body=1" for ::1 at 2015-06-23 16:20:50 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.self-8e38bef2cbea3ec43e8de086ad0f73079662c3330d3eec2ace9029a5b8f6f4c2.js?body=1" for ::1 at 2015-06-23 16:20:50 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.self-e68714c816093dc6b9e24ac9545c9795b610d6c8fe1613656e1fd57b577c4901.js?body=1" for ::1 at 2015-06-23 16:20:50 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.self-ef61c6af9edf0954e9db13d91fedb47fe753c9fa7dffc9fb53db6685d11bbc94.js?body=1" for ::1 at 2015-06-23 16:20:50 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.self-dab213f1ddc805a7461a1768832f6399699dd2c87130b4cda9d49dbf67749e3f.js?body=1" for ::1 at 2015-06-23 16:20:50 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.self-be288b3f53d49bcb5d62da877f5cacda819e6563dad2756aa05fd457b4d679b1.js?body=1" for ::1 at 2015-06-23 16:20:50 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.self-8b41cd13a988c713cda9ac7209ce925705c76377afbe9be10942a17afc9613fb.js?body=1" for ::1 at 2015-06-23 16:20:50 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.self-5a0a77db519d1fd14aa53891c24b56f20ec106891cd5852abe73251119a1bdf8.js?body=1" for ::1 at 2015-06-23 16:20:51 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.self-f7b8844a82cd487d6dbcdf779eb58aad572e22aa24aab881172c6a5cc5fde916.js?body=1" for ::1 at 2015-06-23 16:20:51 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.self-7111fa263c9b4d5e78bc6674d715d2e1432e01bf88b7d04ce601dfe11caf2308.js?body=1" for ::1 at 2015-06-23 16:20:51 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.self-e9a45f7e9af1ed08e3e7ffb28f658dbda56fad542a974a5eceb1787d65f4c60f.js?body=1" for ::1 at 2015-06-23 16:20:51 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.self-be715cb5824056a2e4295cdbffa2f902202ada977c9c5e62c967d4eafab345e7.js?body=1" for ::1 at 2015-06-23 16:20:51 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.self-ea1eb259c6a68133bef9b2e28e90d256da98b298db0543e6be48a05d1becb159.js?body=1" for ::1 at 2015-06-23 16:20:51 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.self-99d1695338bf0f77c8bca710a4e23f6227be30085956df2e44507d86f67bd706.js?body=1" for ::1 at 2015-06-23 16:20:51 -0400
+
+
+Started GET "/assets/foundation.self-abe4ee7a105042f73b12b1f1a28788522d2f253445a475a94ab4d6e1f7b0ec52.js?body=1" for ::1 at 2015-06-23 16:20:52 -0400
+
+
+Started GET "/assets/application.self-1509cb3433bf7f60a75710bd4d8561d25423676b3c4d4a21914940bf07b8869a.js?body=1" for ::1 at 2015-06-23 16:20:52 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.self-1de146a9316c7f1e124cecf68084b34bcc515c6284cb6e122fdc4e90b7fd3634.js?body=1" for ::1 at 2015-06-23 16:20:52 -0400
+
+
+Started GET "/questions/1" for ::1 at 2015-06-23 16:27:50 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mQuestion Load (0.7ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAnswer Load (0.6ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+  Rendered questions/show.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 1747ms (Views: 1545.5ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-23 16:27:53 -0400
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for ::1 at 2015-06-23 16:27:53 -0400
+
+
+Started GET "/assets/foundation/foundation.self-830ea1c8c77bc6df1ef936612b213ec314ab3f2c08b2fca37d12f27123599dcd.js?body=1" for ::1 at 2015-06-23 16:27:53 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-23 16:27:54 -0400
+
+
+Started GET "/assets/foundation_and_overrides.self-abc4def05cdfd072a864560f7d30abb82168baf19224baeb8e17ecec829be2d8.css?body=1" for ::1 at 2015-06-23 16:27:54 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.self-14d1119886db0d260f10114ae33f33ec1e76f09abb5eac77c7d392ca1ce27aaf.js?body=1" for ::1 at 2015-06-23 16:27:54 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.self-791df0f92b5f9733058e009aa29c58c3c88465c52b98ad3c2912dd27dc4b9572.js?body=1" for ::1 at 2015-06-23 16:27:54 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.self-8e38bef2cbea3ec43e8de086ad0f73079662c3330d3eec2ace9029a5b8f6f4c2.js?body=1" for ::1 at 2015-06-23 16:27:54 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.self-e68714c816093dc6b9e24ac9545c9795b610d6c8fe1613656e1fd57b577c4901.js?body=1" for ::1 at 2015-06-23 16:27:55 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.self-dab213f1ddc805a7461a1768832f6399699dd2c87130b4cda9d49dbf67749e3f.js?body=1" for ::1 at 2015-06-23 16:27:55 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.self-ef61c6af9edf0954e9db13d91fedb47fe753c9fa7dffc9fb53db6685d11bbc94.js?body=1" for ::1 at 2015-06-23 16:27:55 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.self-be288b3f53d49bcb5d62da877f5cacda819e6563dad2756aa05fd457b4d679b1.js?body=1" for ::1 at 2015-06-23 16:27:55 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.self-7111fa263c9b4d5e78bc6674d715d2e1432e01bf88b7d04ce601dfe11caf2308.js?body=1" for ::1 at 2015-06-23 16:27:55 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.self-8b41cd13a988c713cda9ac7209ce925705c76377afbe9be10942a17afc9613fb.js?body=1" for ::1 at 2015-06-23 16:27:55 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.self-5a0a77db519d1fd14aa53891c24b56f20ec106891cd5852abe73251119a1bdf8.js?body=1" for ::1 at 2015-06-23 16:27:55 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.self-f7b8844a82cd487d6dbcdf779eb58aad572e22aa24aab881172c6a5cc5fde916.js?body=1" for ::1 at 2015-06-23 16:27:56 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.self-ea1eb259c6a68133bef9b2e28e90d256da98b298db0543e6be48a05d1becb159.js?body=1" for ::1 at 2015-06-23 16:27:56 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.self-e9a45f7e9af1ed08e3e7ffb28f658dbda56fad542a974a5eceb1787d65f4c60f.js?body=1" for ::1 at 2015-06-23 16:27:56 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.self-1de146a9316c7f1e124cecf68084b34bcc515c6284cb6e122fdc4e90b7fd3634.js?body=1" for ::1 at 2015-06-23 16:27:56 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.self-be715cb5824056a2e4295cdbffa2f902202ada977c9c5e62c967d4eafab345e7.js?body=1" for ::1 at 2015-06-23 16:27:56 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.self-99d1695338bf0f77c8bca710a4e23f6227be30085956df2e44507d86f67bd706.js?body=1" for ::1 at 2015-06-23 16:27:56 -0400
+
+
+Started GET "/assets/foundation.self-abe4ee7a105042f73b12b1f1a28788522d2f253445a475a94ab4d6e1f7b0ec52.js?body=1" for ::1 at 2015-06-23 16:27:56 -0400
+
+
+Started GET "/assets/application.self-1509cb3433bf7f60a75710bd4d8561d25423676b3c4d4a21914940bf07b8869a.js?body=1" for ::1 at 2015-06-23 16:27:57 -0400
+
+
+Started GET "/questions/1/edit?edit=Edit" for ::1 at 2015-06-23 16:27:57 -0400
+Processing by QuestionsController#edit as HTML
+  Parameters: {"edit"=>"Edit", "id"=>"1"}
+  [1m[35mQuestion Load (1.5ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered questions/new.html.erb within layouts/application (162.7ms)
+Completed 200 OK in 3167ms (Views: 3141.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/questions/1" for ::1 at 2015-06-23 16:29:13 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.6ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAnswer Load (0.5ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 1]]
+  Rendered questions/show.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 1762ms (Views: 1491.9ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for ::1 at 2015-06-23 16:29:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-23 16:29:17 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-23 16:29:17 -0400
+
+
+Started GET "/assets/foundation_and_overrides.self-abc4def05cdfd072a864560f7d30abb82168baf19224baeb8e17ecec829be2d8.css?body=1" for ::1 at 2015-06-23 16:29:17 -0400
+
+
+Started GET "/assets/foundation/foundation.self-830ea1c8c77bc6df1ef936612b213ec314ab3f2c08b2fca37d12f27123599dcd.js?body=1" for ::1 at 2015-06-23 16:29:17 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.self-14d1119886db0d260f10114ae33f33ec1e76f09abb5eac77c7d392ca1ce27aaf.js?body=1" for ::1 at 2015-06-23 16:29:17 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.self-791df0f92b5f9733058e009aa29c58c3c88465c52b98ad3c2912dd27dc4b9572.js?body=1" for ::1 at 2015-06-23 16:29:18 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.self-e68714c816093dc6b9e24ac9545c9795b610d6c8fe1613656e1fd57b577c4901.js?body=1" for ::1 at 2015-06-23 16:29:18 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.self-8e38bef2cbea3ec43e8de086ad0f73079662c3330d3eec2ace9029a5b8f6f4c2.js?body=1" for ::1 at 2015-06-23 16:29:18 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.self-ef61c6af9edf0954e9db13d91fedb47fe753c9fa7dffc9fb53db6685d11bbc94.js?body=1" for ::1 at 2015-06-23 16:29:18 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.self-be288b3f53d49bcb5d62da877f5cacda819e6563dad2756aa05fd457b4d679b1.js?body=1" for ::1 at 2015-06-23 16:29:18 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.self-dab213f1ddc805a7461a1768832f6399699dd2c87130b4cda9d49dbf67749e3f.js?body=1" for ::1 at 2015-06-23 16:29:18 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.self-8b41cd13a988c713cda9ac7209ce925705c76377afbe9be10942a17afc9613fb.js?body=1" for ::1 at 2015-06-23 16:29:19 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.self-f7b8844a82cd487d6dbcdf779eb58aad572e22aa24aab881172c6a5cc5fde916.js?body=1" for ::1 at 2015-06-23 16:29:19 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.self-7111fa263c9b4d5e78bc6674d715d2e1432e01bf88b7d04ce601dfe11caf2308.js?body=1" for ::1 at 2015-06-23 16:29:19 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.self-5a0a77db519d1fd14aa53891c24b56f20ec106891cd5852abe73251119a1bdf8.js?body=1" for ::1 at 2015-06-23 16:29:19 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.self-ea1eb259c6a68133bef9b2e28e90d256da98b298db0543e6be48a05d1becb159.js?body=1" for ::1 at 2015-06-23 16:29:19 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.self-99d1695338bf0f77c8bca710a4e23f6227be30085956df2e44507d86f67bd706.js?body=1" for ::1 at 2015-06-23 16:29:19 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.self-e9a45f7e9af1ed08e3e7ffb28f658dbda56fad542a974a5eceb1787d65f4c60f.js?body=1" for ::1 at 2015-06-23 16:29:19 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.self-1de146a9316c7f1e124cecf68084b34bcc515c6284cb6e122fdc4e90b7fd3634.js?body=1" for ::1 at 2015-06-23 16:29:19 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.self-be715cb5824056a2e4295cdbffa2f902202ada977c9c5e62c967d4eafab345e7.js?body=1" for ::1 at 2015-06-23 16:29:20 -0400
+
+
+Started GET "/assets/foundation.self-abe4ee7a105042f73b12b1f1a28788522d2f253445a475a94ab4d6e1f7b0ec52.js?body=1" for ::1 at 2015-06-23 16:29:20 -0400
+
+
+Started GET "/questions/1/edit?edit=Edit" for ::1 at 2015-06-23 16:29:20 -0400
+Processing by QuestionsController#edit as HTML
+  Parameters: {"edit"=>"Edit", "id"=>"1"}
+  [1m[36mQuestion Load (0.7ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered questions/edit.html.erb within layouts/application (121.8ms)
+Completed 200 OK in 2845ms (Views: 2835.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-1509cb3433bf7f60a75710bd4d8561d25423676b3c4d4a21914940bf07b8869a.js?body=1" for ::1 at 2015-06-23 16:29:23 -0400
+
+
+Started GET "/assets/application.self-1509cb3433bf7f60a75710bd4d8561d25423676b3c4d4a21914940bf07b8869a.js?body=1" for ::1 at 2015-06-23 16:29:23 -0400
+
+
+Started GET "/questions/1/edit?edit=Edit" for ::1 at 2015-06-23 16:30:13 -0400
+Processing by QuestionsController#edit as HTML
+  Parameters: {"edit"=>"Edit", "id"=>"1"}
+  [1m[35mQuestion Load (0.6ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered questions/edit.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 1694ms (Views: 1558.6ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for ::1 at 2015-06-23 16:30:16 -0400
+
+
+Started GET "/assets/foundation/foundation.self-830ea1c8c77bc6df1ef936612b213ec314ab3f2c08b2fca37d12f27123599dcd.js?body=1" for ::1 at 2015-06-23 16:30:17 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-23 16:30:17 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-23 16:30:17 -0400
+
+
+Started GET "/assets/foundation_and_overrides.self-abc4def05cdfd072a864560f7d30abb82168baf19224baeb8e17ecec829be2d8.css?body=1" for ::1 at 2015-06-23 16:30:17 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.self-14d1119886db0d260f10114ae33f33ec1e76f09abb5eac77c7d392ca1ce27aaf.js?body=1" for ::1 at 2015-06-23 16:30:18 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.self-791df0f92b5f9733058e009aa29c58c3c88465c52b98ad3c2912dd27dc4b9572.js?body=1" for ::1 at 2015-06-23 16:30:18 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.self-8e38bef2cbea3ec43e8de086ad0f73079662c3330d3eec2ace9029a5b8f6f4c2.js?body=1" for ::1 at 2015-06-23 16:30:18 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.self-e68714c816093dc6b9e24ac9545c9795b610d6c8fe1613656e1fd57b577c4901.js?body=1" for ::1 at 2015-06-23 16:30:18 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.self-dab213f1ddc805a7461a1768832f6399699dd2c87130b4cda9d49dbf67749e3f.js?body=1" for ::1 at 2015-06-23 16:30:18 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.self-ef61c6af9edf0954e9db13d91fedb47fe753c9fa7dffc9fb53db6685d11bbc94.js?body=1" for ::1 at 2015-06-23 16:30:18 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.self-be288b3f53d49bcb5d62da877f5cacda819e6563dad2756aa05fd457b4d679b1.js?body=1" for ::1 at 2015-06-23 16:30:18 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.self-8b41cd13a988c713cda9ac7209ce925705c76377afbe9be10942a17afc9613fb.js?body=1" for ::1 at 2015-06-23 16:30:19 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.self-f7b8844a82cd487d6dbcdf779eb58aad572e22aa24aab881172c6a5cc5fde916.js?body=1" for ::1 at 2015-06-23 16:30:19 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.self-7111fa263c9b4d5e78bc6674d715d2e1432e01bf88b7d04ce601dfe11caf2308.js?body=1" for ::1 at 2015-06-23 16:30:19 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.self-5a0a77db519d1fd14aa53891c24b56f20ec106891cd5852abe73251119a1bdf8.js?body=1" for ::1 at 2015-06-23 16:30:19 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.self-ea1eb259c6a68133bef9b2e28e90d256da98b298db0543e6be48a05d1becb159.js?body=1" for ::1 at 2015-06-23 16:30:19 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.self-99d1695338bf0f77c8bca710a4e23f6227be30085956df2e44507d86f67bd706.js?body=1" for ::1 at 2015-06-23 16:30:19 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.self-e9a45f7e9af1ed08e3e7ffb28f658dbda56fad542a974a5eceb1787d65f4c60f.js?body=1" for ::1 at 2015-06-23 16:30:19 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.self-be715cb5824056a2e4295cdbffa2f902202ada977c9c5e62c967d4eafab345e7.js?body=1" for ::1 at 2015-06-23 16:30:19 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.self-1de146a9316c7f1e124cecf68084b34bcc515c6284cb6e122fdc4e90b7fd3634.js?body=1" for ::1 at 2015-06-23 16:30:20 -0400
+
+
+Started GET "/assets/foundation.self-abe4ee7a105042f73b12b1f1a28788522d2f253445a475a94ab4d6e1f7b0ec52.js?body=1" for ::1 at 2015-06-23 16:30:20 -0400
+
+
+Started GET "/assets/application.self-1509cb3433bf7f60a75710bd4d8561d25423676b3c4d4a21914940bf07b8869a.js?body=1" for ::1 at 2015-06-23 16:30:20 -0400
+
+
+Started GET "/questions/1/edit?edit=Edit" for ::1 at 2015-06-23 16:44:00 -0400
+Processing by QuestionsController#edit as HTML
+  Parameters: {"edit"=>"Edit", "id"=>"1"}
+  [1m[36mQuestion Load (2.3ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered questions/edit.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 1537ms (Views: 1396.2ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-23 16:44:03 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-23 16:44:03 -0400
+
+
+Started GET "/assets/foundation/foundation.self-830ea1c8c77bc6df1ef936612b213ec314ab3f2c08b2fca37d12f27123599dcd.js?body=1" for ::1 at 2015-06-23 16:44:03 -0400
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for ::1 at 2015-06-23 16:44:03 -0400
+
+
+Started GET "/assets/foundation/foundation.abide.self-14d1119886db0d260f10114ae33f33ec1e76f09abb5eac77c7d392ca1ce27aaf.js?body=1" for ::1 at 2015-06-23 16:44:04 -0400
+
+
+Started GET "/assets/foundation_and_overrides.self-abc4def05cdfd072a864560f7d30abb82168baf19224baeb8e17ecec829be2d8.css?body=1" for ::1 at 2015-06-23 16:44:04 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion.self-791df0f92b5f9733058e009aa29c58c3c88465c52b98ad3c2912dd27dc4b9572.js?body=1" for ::1 at 2015-06-23 16:44:04 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing.self-e68714c816093dc6b9e24ac9545c9795b610d6c8fe1613656e1fd57b577c4901.js?body=1" for ::1 at 2015-06-23 16:44:04 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride.self-be288b3f53d49bcb5d62da877f5cacda819e6563dad2756aa05fd457b4d679b1.js?body=1" for ::1 at 2015-06-23 16:44:04 -0400
+
+
+Started GET "/assets/foundation/foundation.alert.self-8e38bef2cbea3ec43e8de086ad0f73079662c3330d3eec2ace9029a5b8f6f4c2.js?body=1" for ::1 at 2015-06-23 16:44:05 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown.self-dab213f1ddc805a7461a1768832f6399699dd2c87130b4cda9d49dbf67749e3f.js?body=1" for ::1 at 2015-06-23 16:44:05 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange.self-ef61c6af9edf0954e9db13d91fedb47fe753c9fa7dffc9fb53db6685d11bbc94.js?body=1" for ::1 at 2015-06-23 16:44:05 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan.self-8b41cd13a988c713cda9ac7209ce925705c76377afbe9be10942a17afc9613fb.js?body=1" for ::1 at 2015-06-23 16:44:05 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas.self-f7b8844a82cd487d6dbcdf779eb58aad572e22aa24aab881172c6a5cc5fde916.js?body=1" for ::1 at 2015-06-23 16:44:05 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit.self-7111fa263c9b4d5e78bc6674d715d2e1432e01bf88b7d04ce601dfe11caf2308.js?body=1" for ::1 at 2015-06-23 16:44:05 -0400
+
+
+Started GET "/assets/foundation/foundation.tab.self-99d1695338bf0f77c8bca710a4e23f6227be30085956df2e44507d86f67bd706.js?body=1" for ::1 at 2015-06-23 16:44:05 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal.self-5a0a77db519d1fd14aa53891c24b56f20ec106891cd5852abe73251119a1bdf8.js?body=1" for ::1 at 2015-06-23 16:44:06 -0400
+
+
+Started GET "/questions/1/edit" for ::1 at 2015-06-23 16:44:06 -0400
+Processing by QuestionsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mQuestion Load (1.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered questions/edit.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 2902ms (Views: 2889.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/foundation/foundation.tooltip.self-e9a45f7e9af1ed08e3e7ffb28f658dbda56fad542a974a5eceb1787d65f4c60f.js?body=1" for ::1 at 2015-06-23 16:44:09 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.self-ea1eb259c6a68133bef9b2e28e90d256da98b298db0543e6be48a05d1becb159.js?body=1" for ::1 at 2015-06-23 16:44:09 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.self-be715cb5824056a2e4295cdbffa2f902202ada977c9c5e62c967d4eafab345e7.js?body=1" for ::1 at 2015-06-23 16:44:09 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.self-1de146a9316c7f1e124cecf68084b34bcc515c6284cb6e122fdc4e90b7fd3634.js?body=1" for ::1 at 2015-06-23 16:44:09 -0400
+
+
+Started GET "/assets/foundation.self-abe4ee7a105042f73b12b1f1a28788522d2f253445a475a94ab4d6e1f7b0ec52.js?body=1" for ::1 at 2015-06-23 16:44:10 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip.self-e9a45f7e9af1ed08e3e7ffb28f658dbda56fad542a974a5eceb1787d65f4c60f.js?body=1" for ::1 at 2015-06-23 16:44:10 -0400
+
+
+Started GET "/assets/foundation/foundation.slider.self-ea1eb259c6a68133bef9b2e28e90d256da98b298db0543e6be48a05d1becb159.js?body=1" for ::1 at 2015-06-23 16:44:10 -0400
+
+
+Started GET "/assets/foundation.self-abe4ee7a105042f73b12b1f1a28788522d2f253445a475a94ab4d6e1f7b0ec52.js?body=1" for ::1 at 2015-06-23 16:44:10 -0400
+
+
+Started GET "/assets/application.self-1509cb3433bf7f60a75710bd4d8561d25423676b3c4d4a21914940bf07b8869a.js?body=1" for ::1 at 2015-06-23 16:44:10 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer.self-be715cb5824056a2e4295cdbffa2f902202ada977c9c5e62c967d4eafab345e7.js?body=1" for ::1 at 2015-06-23 16:44:11 -0400
+
+
+Started GET "/assets/application.self-1509cb3433bf7f60a75710bd4d8561d25423676b3c4d4a21914940bf07b8869a.js?body=1" for ::1 at 2015-06-23 16:44:11 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar.self-1de146a9316c7f1e124cecf68084b34bcc515c6284cb6e122fdc4e90b7fd3634.js?body=1" for ::1 at 2015-06-23 16:44:11 -0400
+
+
+Started PATCH "/questions/1" for ::1 at 2015-06-23 16:44:15 -0400
+Processing by QuestionsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XP+KndXmM9V1tZoFFAQqCxYwFLjVX+xy5jsq4MUBIy1O6rYFMjwHNlMyEyyGvHbzvXYolnzp56rdiWQd6DBMSw==", "question"=>{"title"=>"The best question ever to be asked in the history of the universe", "description"=>"How muc", "user_id"=>"1"}, "commit"=>"Edit", "id"=>"1"}
+  [1m[36mQuestion Load (0.9ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  Rendered questions/edit.html.erb within layouts/application (109.4ms)
+Completed 200 OK in 3112ms (Views: 2967.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/questions/1" for ::1 at 2015-06-23 16:48:21 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mQuestion Load (0.6ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAnswer Load (0.9ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+  Rendered questions/show.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 1836ms (Views: 1661.7ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/questions/1/edit?edit=Edit" for ::1 at 2015-06-23 16:48:24 -0400
+Processing by QuestionsController#edit as HTML
+  Parameters: {"edit"=>"Edit", "id"=>"1"}
+  [1m[35mQuestion Load (1.1ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered questions/edit.html.erb within layouts/application (104.3ms)
+Completed 200 OK in 1586ms (Views: 1575.2ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/questions/1" for ::1 at 2015-06-23 16:48:30 -0400
+Processing by QuestionsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Nda9+1lfEcyUArv1mBJU0Txun2dPbwZ6JXWEbuu6Wggnw4FjvoUlL7KFMtwKqggplyijSebZDaIex8qTxos1bg==", "question"=>{"title"=>"The best question ever to be asked in the history of the universe", "description"=>"asdf", "user_id"=>"1"}, "commit"=>"Edit", "id"=>"1"}
+  [1m[36mQuestion Load (0.6ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  Rendered questions/edit.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 1615ms (Views: 1573.9ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/questions/1" for ::1 at 2015-06-23 16:48:36 -0400
+Processing by QuestionsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fRD1ZOMVSC9Ymx/LNxkji3EME3YaR+xqHAaoABI+U9ZvBcn8BM98zH4cluKloX9z2kovWLPx57IntOb9Pw88sA==", "question"=>{"title"=>"The best question ever to be asked in the history of the universe", "description"=>"How much wood would a woodchuck chuck if a woodchuck could chuck wood? Please tell me...I have a serious woodchuck-chucking-wood at me problem. dhofdshjlfhvldfbjgdofgjodfgjdfljvldfvjo.", "user_id"=>"1"}, "commit"=>"Edit", "id"=>"1"}
+  [1m[35mQuestion Load (0.7ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/questions/1
+Completed 302 Found in 128ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/questions/1" for ::1 at 2015-06-23 16:48:36 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.6ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAnswer Load (0.7ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 1]]
+  Rendered questions/show.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 1793ms (Views: 1784.3ms | ActiveRecord: 1.3ms)
