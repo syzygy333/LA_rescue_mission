@@ -9,9 +9,9 @@ So that I can help them solve their problem
 
 Acceptance Criteria
 
-- I must be on the question detail page
-- I must provide a description that is at least 50 characters long
-- I must be presented with errors if I fill out the form incorrectly
+[X] I must be on the question detail page
+[X] I must provide a description that is at least 50 characters long
+[X] I must be presented with errors if I fill out the form incorrectly
 } do
 
   scenario 'user visits a question page and submits a valid answer' do

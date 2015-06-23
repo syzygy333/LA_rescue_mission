@@ -4,6 +4,10 @@ feature 'user signs in', %Q{
   As a user
   I want to view recently posted questions
   So that I can help others
+
+  Acceptance Criteria
+  [X] I must see the title of each question
+  [X] I must see questions listed in order, most recently posted first
 } do
 
   before :each do
