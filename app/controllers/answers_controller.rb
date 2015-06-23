@@ -7,7 +7,7 @@ class AnswersController < ApplicationController
     else
       flash[:error] = @answer.errors.full_messages.join(". ")
       @question = @answer.question
-      @answers = Answer.find_by(question_id: @question.id)
+      @answers = @question.answers
       render 'questions/show'
     end
   end
