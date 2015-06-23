@@ -1,2 +1,20 @@
 <h1><%= @question.title %></h1>
 <p><%= @question.description %></p>
+
+<% if @answers %>
+<ul>
+  <% @answers.each do |answer| %>
+    <li><%= answer.answer %></li>
+  <% end %>
+</ul>
+<% end %>
+
+<%= form_for [@question, @answer] do |f| %>
+  <%= f.label :answer %>
+  <%= f.text_area :answer %>
+
+  <%= f.hidden_field :user_id, value: "2" %>
+  <%= f.hidden_field :question_id, value: @question.id %>
+
+  <%= f.submit "Answer" %>
+<% end %>

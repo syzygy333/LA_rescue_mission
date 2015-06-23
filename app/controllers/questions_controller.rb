@@ -20,9 +20,11 @@ class QuestionsController < ApplicationController
 
   def show
     @question = Question.find(params[:id])
+    @answers = Answer.where(question_id: @question.id)
+    @answer = Answer.new
   end
 
-  protected
+  private
   def question_params
     params.require(:question).permit(:title, :description, :user_id)
   end
