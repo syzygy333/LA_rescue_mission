@@ -1,0 +1,13 @@
+<h2>Submit a Question</h2>
+
+<%= form_for @question do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+
+  <%= f.hidden_field :user_id, value: "1" %>
+
+  <%= f.submit "Submit" %>
+<%- end -%>
