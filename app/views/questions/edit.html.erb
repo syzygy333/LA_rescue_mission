@@ -9,5 +9,9 @@
 
   <%= f.hidden_field :user_id, value: "1" %>
 
-  <%= f.submit "Edit" %>
+  <%= f.submit "Edit Question" %>
+
 <%- end -%>
+
+<%= button_to "Delete Question", { controller: :questions,
+      action: 'destroy', id: @question.id }, method: :delete %>

@@ -18,6 +18,15 @@ class QuestionsController < ApplicationController
     end
   end
 
+  def destroy
+    @question = Question.find(params[:id])
+    @answers = @question.answers
+    @question.destroy
+    @answers.each { |answer| answer.destroy }
+    flash[:notice] = "Question deleted"
+    redirect_to '/questions'
+  end
+
   def edit
     @question = Question.find(params[:id])
   end

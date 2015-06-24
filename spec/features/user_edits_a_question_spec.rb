@@ -23,7 +23,7 @@ feature 'user views all the answers to a question', %Q{
     question
     answer
     visit "/questions/#{question.id}"
-    click_button 'Edit'
+    click_button 'Edit Question'
   end
 
   scenario 'user edits a question and provides valid information' do
@@ -37,7 +37,7 @@ feature 'user views all the answers to a question', %Q{
 
     fill_in 'Description', with: new_description
 
-    click_button 'Edit'
+    click_button 'Edit Question'
 
     expect(page).to have_content("Edit successful")
     expect(page).to have_content(new_description)
@@ -57,7 +57,7 @@ feature 'user views all the answers to a question', %Q{
 
     fill_in 'Description', with: new_description
 
-    click_button 'Edit'
+    click_button 'Edit Question'
 
     expect(page).to have_content("Description is too short (minimum is 150 characters)")
     expect(page).to have_field('Title', with: question.title)
