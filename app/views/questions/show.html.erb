@@ -1,5 +1,5 @@
 <h1><%= @question.title %></h1>
-<%= render "questions/description" %>
+<p><%= @question.description %></p>
 
 <%= button_to "Edit Question", { controller: :questions, action: 'edit',
       id: @question.id }, method: :get %>
@@ -10,7 +10,7 @@
 <% if @answers %>
 <ul>
   <% @answers.each do |answer| %>
-    <li><%= render partial: 'answers/answer', locals: {answer: answer} %></li>
+    <li><%= answer.answer %></li>
   <% end %>
 </ul>
 <% end %>
