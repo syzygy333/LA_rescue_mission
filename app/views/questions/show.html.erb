@@ -1,5 +1,5 @@
 <h1><%= @question.title %></h1>
-<p><%= @question.description %></p>
+<%= render "questions/description" %>
 
 <%= button_to "Edit Question", { controller: :questions, action: 'edit',
       id: @question.id }, method: :get %>
@@ -7,12 +7,10 @@
 <%= button_to "Delete Question", { controller: :questions,
       action: 'destroy', id: @question.id }, method: :delete %>
 
-<!-- <a href="/questions/<%= @question.id %>/edit">Edit</a> -->
-
 <% if @answers %>
 <ul>
   <% @answers.each do |answer| %>
-    <li><%= answer.answer %></li>
+    <li><%= render partial: 'answers/answer', locals: {answer: answer} %></li>
   <% end %>
 </ul>
 <% end %>
